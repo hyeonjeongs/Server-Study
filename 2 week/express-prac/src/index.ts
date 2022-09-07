@@ -7,7 +7,7 @@ app.use(express.json()); //express에서 request body를 json 으로 받아오�
 app.use('/api', require('./api')); // /api에 요청 들어오면 api 폴더로 분기
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
-    res.send('Hi! My name is hyeonjeong~!');
+    res.send('Hi! My name is hyeonjeong~! 분기처리!');
 }); //get -> http method
 
 app.listen('8000', () => {
